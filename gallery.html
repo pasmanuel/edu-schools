@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/gallery_styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+    <link rel="stylesheet" href="/styles/stylesheet.css">
+</head>
+<body>
+     <section class="top-nav">
+        <div class="top_nav_1">
+            <span>
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <p>+233245471446</p>
+            </span>
+            <span>
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <p>eduschool67@gmail.com</p>
+            </span>
+
+        </div>
+        <div  class="top_nav_2">
+            <div>
+                <i class="fa fa-user-plus" aria-hidden="true"></i>
+                <p>Sign-Up</p>
+            </div>
+           <div>
+                <p>/</p>
+                <i class="fa fa-lock" aria-hidden="true"></i>
+                <p>Sign-In</p>
+                <button class="btn-top-nav">APPLY NOW</button>
+           </div>
+        </div>
+
+    </section>
+    <!-- To Navbar -->
+     <section>
+        <nav>
+             <div>
+                <a href="index.html"><img src="/img/logo.png" alt="" class="logo"></a>
+                <h2>Edu-Schools</h2>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_page.html">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+     </section>
+     <div class="container">
+        <!-- Header -->
+        <header class="header fade-in">
+            <div class="header-content">
+                <h1>School Gallery</h1>
+                <p>Explore moments from our vibrant school community through photos and videos of events, activities, and daily life.</p>
+                
+                <div class="stats">
+                    <div class="stat-item">
+                        <div class="stat-number">850+</div>
+                        <div class="stat-label">Photos</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">42</div>
+                        <div class="stat-label">Events</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">18</div>
+                        <div class="stat-label">Albums</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">24</div>
+                        <div class="stat-label">Videos</div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+    
+        <div class="gallery-controls fade-in">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-th"></i> All Photos
+                </button>
+                <button class="filter-btn" data-filter="events">
+                    <i class="fas fa-calendar-alt"></i> School Events
+                </button>
+                <button class="filter-btn" data-filter="sports">
+                    <i class="fas fa-running"></i> Sports
+                </button>
+                <button class="filter-btn" data-filter="academics">
+                    <i class="fas fa-graduation-cap"></i> Academics
+                </button>
+                <button class="filter-btn" data-filter="arts">
+                    <i class="fas fa-paint-brush"></i> Arts & Culture
+                </button>
+                <button class="filter-btn" data-filter="campus">
+                    <i class="fas fa-school"></i> Campus Life
+                </button>
+            </div>
+            
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Search for photos by keyword...">
+            </div>
+        </div>
+        
+        <!-- Gallery Grid -->
+        <div class="gallery-grid" id="galleryContainer">
+            <!-- Gallery items will be loaded here by JavaScript -->
+        </div>
+        
+      
+        <section class="featured-section fade-in">
+            <h2 class="section-title">Featured Albums</h2>
+            <div class="albums-grid">
+                <div class="album-card">
+                    <div class="album-header">
+                        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Graduation Ceremony" class="album-img">
+                        <span class="album-count">48 photos</span>
+                    </div>
+                    <div class="album-body">
+                        <h3 class="album-title">Graduation 2007 - 2025</h3>
+                        <p class="album-description">Celebrating the achievements of our graduating class with ceremony and joy.</p>
+                        <a href="graduationpictures.html" class="album-link">
+                            View Album <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="album-card">
+                    <div class="album-header">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Science Fair" class="album-img">
+                        <span class="album-count">36 photos</span>
+                    </div>
+                    <div class="album-body">
+                        <h3 class="album-title">Annual Science Fair</h3>
+                        <p class="album-description">Innovative projects and experiments by our young scientists.</p>
+                        <a href="#" class="album-link">
+                            View Album <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="album-card">
+                    <div class="album-header">
+                        <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Sports Day" class="album-img">
+                        <span class="album-count">62 photos</span>
+                    </div>
+                    <div class="album-body">
+                        <h3 class="album-title">Sports Day 2023</h3>
+                        <p class="album-description">A day filled with energy, teamwork, and athletic achievements.</p>
+                        <a href="#" class="album-link">
+                            View Album <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Video Section -->
+        <section class="video-section fade-in">
+            <h2 class="section-title">School Videos</h2>
+            <div class="videos-grid">
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1524178234883-043d5c3f3cf4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="School Tour">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="video-title">Virtual Campus Tour</h3>
+                        <div class="video-duration">
+                            <i class="far fa-clock"></i> 8:24 min
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&filter=crop&w=800&q=80" alt="Music Concert">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="video-title">Spring Music Concert</h3>
+                        <div class="video-duration">
+                            <i class="far fa-clock"></i> 12:15 min
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Teacher Interview">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="video-title">Meet Our Teachers</h3>
+                        <div class="video-duration">
+                            <i class="far fa-clock"></i> 6:42 min
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="site-footer"  data-aos="fade-up">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <a href="index.html"><img src="/img/logo.png" alt="" class="logo"></a>
+                <h2>Edu-Schools</h2>
+
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="programmes.html">Programmes</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>123 School Street, Accra, Ghana</p>
+                <p>Phone: +233 123 456 789</p>
+                <p>Email: <a href="mailto:info@ourschool.edu.gh">info@ourschool.edu.gh</a></p>
+            </div>
+
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 Edu-schools. All rights reserved.</p>
+    </div>
+</footer>
+
+        <!-- to js and libraries -->
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <script>
+        AOS.init({
+            duration: 1000,
+            once: false ,    
+            mirror: true  
+        });
+
+        
+        </script>
+        <script src="scripts/script.js"></script>
+
+   </body>
+</html>

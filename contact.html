@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+    <link rel="stylesheet" href="/styles/stylesheet.css">
+    <link rel="stylesheet" href="styles/styles_contact.css">
+</head>
+<body>
+     <section class="top-nav">
+        <div class="top_nav_1">
+            <span>
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <p>+233245471446</p>
+            </span>
+            <span>
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <p>eduschool67@gmail.com</p>
+            </span>
+
+        </div>
+        <div  class="top_nav_2">
+            <div>
+                <i class="fa fa-user-plus" aria-hidden="true"></i>
+                <p>Sign-Up</p>
+            </div>
+           <div>
+                <p>/</p>
+                <i class="fa fa-lock" aria-hidden="true"></i>
+                <p>Sign-In</p>
+                <button class="btn-top-nav">APPLY NOW</button>
+           </div>
+        </div>
+
+    </section>
+    <!-- To Navbar -->
+     <section>
+        <nav>
+           <div>
+                <img src="/img/logo.png" alt="" class="logo">
+                <h2>Edu-Schools</h2>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_page.html">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+     </section>
+     <div class="container" >
+     
+        <header class="header fade-up">
+            <h1>Contact Edu-schools</h1>
+            <p>We're here to help! Reach out to us through any of the following methods. Our team is ready to assist you with any questions or concerns.</p>
+        </header>
+        
+  
+        <div class="contact-grid">
+            <div class="contact-card address fade-in">
+                <div class="contact-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h3>Visit Our Campus</h3>
+                <p><strong>Our School Address:</strong></p>
+                <p>Ejisu , Musuem Junction</p>
+                <p>Kumasi, Ghana</p>
+                <a href="#map" class="contact-link">View on Map →</a>
+            </div>
+            
+            <div class="contact-card phone fade-in">
+                <div class="contact-icon">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <h3>Call Us</h3>
+                <p><strong>Main Office:</strong> +233 2456766677</p>
+                <p><strong>Admissions:</strong> +233 344556666</p>
+                <p><i>Office Hours: 8:00 AM - 4:30 PM, Mon-Fri</i></p>
+            </div>
+            
+            <div class="contact-card email fade-in">
+                <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <h3>Email Us</h3>
+                <p><strong>General Inquiries:</strong></p>
+                <p>info@edu-schools.edu</p>
+                <p><strong>Admissions:</strong></p>
+                <p>admissions@edu-schools.edu</p>
+                <p><strong>Support:</strong></p>
+                <p>support@edu-schools.edu</p>
+            </div>
+            
+            <div class="contact-card hours fade-in">
+                <div class="contact-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <h3>School Hours</h3>
+                <p><strong>School Day:</strong> 8:30 AM - 3:30 PM,Mon - Fri</p>
+                <p><strong>Office Hours:</strong> 7:00 AM - 4:30 PM, Mon - Sat</p>
+                <p><strong>Weekends:</strong> Closed</p>
+                <p><strong>Holidays:</strong> As per academic calendar</p>
+            </div>
+        </div>
+        
+        <!-- Contact Form -->
+        <section class="contact-form-section fade-in">
+            <h2 class="section-title">Send Us a Message</h2>
+            <form id="contactForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Your full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="" disabled selected>Select a subject</option>
+                            <option value="admissions">Admissions Inquiry</option>
+                            <option value="academics">Academic Questions</option>
+                            <option value="facilities">School Facilities</option>
+                            <option value="events">School Events</option>
+                            <option value="feedback">Feedback/Suggestions</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Your Message *</label>
+                    <textarea id="message" name="message" required placeholder="Please type your message here..."></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </section>
+        
+        <!-- Map Section -->
+        <section class="map-section fade-in">
+            <h2 class="section-title">Find Our Campus</h2>
+            <div class="map-container">
+                <div id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63398.985455924325!2d-1.497037!3d6.71645635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdbea8ca9644aed%3A0x643f80b764c4a121!2sEjisu!5e0!3m2!1sen!2sgh!4v1770672535173!5m2!1sen!2sgh" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Departments Contact -->
+        <section class="departments-section fade-in">
+            <h2 class="section-title">Contact Specific Departments</h2>
+            <div class="departments-grid">
+                <div class="department-card">
+                    <h4>Admissions Office</h4>
+                    <p>For inquiries about enrollment, applications, and school tours.</p>
+                    <p class="department-contact">admissions@edu-schools.edu</p>
+                    <p class="department-contact">+233543455667</p>
+                </div>
+                
+                <div class="department-card">
+                    <h4>Academic Office</h4>
+                    <p>Curriculum, grading, academic policies, and teacher communication.</p>
+                    <p class="department-contact">academics@edu-schools.edu</p>
+                    <p class="department-contact">+2332457678</p>
+                </div>
+                
+                <div class="department-card">
+                    <h4>Student Affairs</h4>
+                    <p>Student counseling, activities, clubs, and disciplinary matters.</p>
+                    <p class="department-contact">studentaffairs@edu-schools.edu</p>
+                    <p class="department-contact">+233245625267</p>
+                </div>
+                
+                <div class="department-card">
+                    <h4>Finance Office</h4>
+                    <p>Tuition fees, payment plans, scholarships, and financial aid.</p>
+                    <p class="department-contact">finance@edu-school.edu</p>
+                    <p class="department-contact">+233245471446</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="site-footer"  data-aos="fade-up">
+    <div class="footer-top">
+        <div class="footer-logo">
+            <a href="index.html"><img src="/img/logo.png" alt="" class="logo"></a>
+            <h2>Edu-Schools</h2>
+
+        </div>
+
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="programmes.html">Programmes</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <p>Ejisu, Kumasi, Ghana</p>
+            <p>Phone: +233 55757 789</p>
+            <p>Email: <a href="mailto:info@edu-school.edu.gh">info@ourschool.edu.gh</a></p>
+        </div>
+
+        <div class="footer-social">
+            <h4>Follow Us</h4>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 Edu-schools. All rights reserved.</p>
+    </div>
+</footer>
+
+           <!-- to js and libraries -->
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <script>
+        AOS.init({
+            duration: 1000, // animation duration in ms
+            once: false ,     // whether animation happens only once
+            mirror: true  
+        });
+
+        
+        </script>
+        <script src="scripts/script.js"></script>
+</body>
+</html>
