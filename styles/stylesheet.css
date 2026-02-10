@@ -7,7 +7,10 @@ body{
             background-color: #f8f9fa;
             color: #333;
             line-height: 1.6;
-        }
+            /* padding-top: 5px;  */
+}
+
+ 
 
 
 
@@ -21,6 +24,10 @@ body{
     background: #264653;
     color: white;
     font-size: 0.9rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+
 }
 
 /* LEFT */
@@ -35,7 +42,7 @@ body{
     gap: 0.4rem;
 }
 
-/* RIGHT */
+
 .top_nav_2 {
     display: flex;
     align-items: center;
@@ -76,14 +83,20 @@ body{
 }
 
 .navbar {
+    position: fixed !important;
+    top: 2rem;
+    left: 0;
+    width: 100%;
+    height: 80px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 1rem 6%;
+    justify-content: space-between;
+    padding: 0 6%;
     background-color: whitesmoke;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 9999;
 }
+
 
 .logo-box {
     display: flex;
@@ -159,19 +172,7 @@ body{
     color: #f1f1f1;
 }
 
-/* Button */
-/* .btn-hero {
-    padding: 0.9rem 2.8rem;
-    border: none;
-    background: #d93853;
-    border-radius: 30px;
-    font-weight: 600;
-} */
 
-.btn-hero a {
-    color: white;
-    text-decoration: none;
-}
 
 
 
@@ -186,9 +187,21 @@ body{
     padding: 15px;
     border-radius: 3rem;
     font-weight: 800;
+    transition: 0.3s ease-in;
+    
+}
+
+.btn-hero a {
+    color: white;
+    text-decoration: none;
 }
 
 
+.btn-hero:hover{
+   background:#264653;
+   color: white;
+   transform: scale(1.05);
+}
 
 
 
@@ -197,6 +210,7 @@ body{
 .why-us {
     padding: 4rem 2rem;
     text-align: center;
+    color: #1a5f7a;
 }
 
 .why-us h3 {
@@ -272,12 +286,15 @@ body{
     flex: 1;
 }
 
-.welcome-text h2 {
+.welcome-text > h2{
     font-size: 2.2rem;
     margin-bottom: 15px;
+    color: #1a5f7a;
+
 }
 
-.welcome-text p {
+
+.welcome-text p{
     font-size: 1rem;
     line-height: 1.7;
     margin-bottom: 15px;
@@ -298,6 +315,26 @@ body{
 /* Button */
 .welcome-text .btn {
     margin-top: 15px;
+    padding: 10px;
+    background: #d93853;;
+    border: 0.03rem solid #d93853;
+    border-radius: 10px;
+    
+
+
+}
+
+
+.welcome-text .btn:hover{
+    border: 0.03rem solid;
+    
+    
+}
+.welcome-text .btn a {
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+  
 }
 
 
@@ -345,6 +382,7 @@ body{
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 2rem;
+    
 
 }
 
@@ -352,6 +390,9 @@ body{
     text-align: center;
     font-size: 2rem;
     margin-bottom: 2rem;
+    color: #1a5f7a;
+
+    
 }
 
 
@@ -420,6 +461,8 @@ body{
 .facility-box h4 {
     margin-bottom: 0.5rem;
     font-size: 1.5rem;
+    color: #1a5f7a;
+
 }
 
 .facility-box p {
@@ -427,6 +470,11 @@ body{
     line-height: 1.4;
 }
 
+
+.facilities h3{
+    color: #1a5f7a;
+
+}
 
 /* to partners */
 .partners {
@@ -438,6 +486,8 @@ body{
 .partners h3 {
     font-size: 2rem;
     margin-bottom: 3rem;
+    color: #1a5f7a;
+
 }
 
 .partners-logos {

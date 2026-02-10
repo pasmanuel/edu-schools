@@ -8,6 +8,7 @@
   display: flex;
   align-items: center;
   padding-left: 8%;
+  padding-top: 15px;
 }
 
 .about-hero-content {
@@ -40,6 +41,8 @@
 .story-text h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+color: #1a5f7a;
+
 }
 
 .story-text p {
@@ -69,7 +72,7 @@
             border-bottom: 1px solid #eaeaea;
         }
         
-        .header h1 {
+        .header h2{
             color: #1a5f7a;
             font-size: 2.8rem;
             margin-bottom: 10px;
