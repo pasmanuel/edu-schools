@@ -250,24 +250,9 @@ span{
     text-decoration: none;
 }
 
-/* ================= RESPONSIVE ================= */
 
-/* Tablets */
-
-
-/* .hero-section{
-   background-image:
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
-        url("/img/hero-bg.jpg");
-    height: 90vh;
-    background-repeat: no-repeat;
-     background-position: center; 
-    background-attachment: scroll;
-    background-size: cover;
-    position: relative;
-    text-align: center;
     
-}
+
 
 
 .hero-section div {
@@ -372,43 +357,51 @@ span{
     background-color: #7c2d12;
 }
 
-/* to welcome text */
+
+/* ===== Welcome Section ===== */
 .welcome-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 3rem;
-    padding: 4rem 2rem;
+    gap: 40px;
+    padding: 60px 8%;
 }
 
+/* Text area */
 .welcome-text {
     flex: 1;
 }
 
 .welcome-text h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    font-size: 50px;
-
+    font-size: 2.2rem;
+    margin-bottom: 15px;
 }
 
 .welcome-text p {
-    margin-bottom: 1rem;
-    line-height: 1.6;
-    font-size: 20px;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
 }
 
+/* Image area */
 .welcome-image {
     flex: 1;
 }
 
 .welcome-image img {
     width: 100%;
-    height: 50vh;
+    height: auto;
     border-radius: 10px;
-    object-fit: cover;
-
+    display: block;
 }
+
+/* Button */
+.welcome-text .btn {
+    margin-top: 15px;
+}
+
+
+
 
 /* to profammes offere home */
 .programmes {
@@ -825,5 +818,51 @@ span{
 
     .btn-hero {
         padding: 0.8rem 2.2rem;
+    }
+}
+
+
+/* To welcome section media */
+* ===== Tablet (≤ 992px) ===== */
+@media (max-width: 992px) {
+    .welcome-section {
+        padding: 50px 5%;
+        gap: 30px;
+    }
+
+    .welcome-text h2 {
+        font-size: 2rem;
+    }
+}
+
+/* ===== Mobile (≤ 768px) ===== */
+@media (max-width: 768px) {
+    .welcome-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .welcome-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .welcome-text p {
+        font-size: 0.95rem;
+    }
+
+    .welcome-image {
+        margin-top: 20px;
+    }
+}
+
+/* ===== Small phones (≤ 480px) ===== */
+@media (max-width: 480px) {
+    .welcome-text h2 {
+        font-size: 1.6rem;
+    }
+
+    .welcome-text p {
+        font-size: 0.9rem;
     }
 }
