@@ -30,26 +30,35 @@
                 <p>/</p>
                 <i class="fa fa-lock" aria-hidden="true"></i>
                 <p>Sign-In</p>
-                <button class="btn-top-nav">APPLY NOW</button>
+                 <button class="btn-top-nav"><a href="contact.html">APPLY NOW</a></button>
            </div>
         </div>
 
     </section>
     <!-- To Navbar -->
-     <section>
-        <nav>
-             <div>
-                <a href="index.html"><img src="/img/logo.png" alt="" class="logo"></a>
-                <h2>Edu-Schools</h2>
+   <section>
+        <nav class="navbar">
+            <div class="logo-box">
+                <a href="index.html">
+                    <img src="/img/logo.png" alt="School Logo" class="logo">
+                </a>
+                <h2 class="logo-head">Edu-Schools</h2>
             </div>
-            <ul>
+
+            <!-- Hamburger -->
+            <div class="menu-toggle" id="menuToggle">
+                ☰
+            </div>
+
+            <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about_page.html">About Us</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-     </section>
+    </section>
+
      <div class="container">
         <!-- Header -->
         <header class="header fade-in">
@@ -160,58 +169,8 @@
             </div>
         </section>
         
-        <!-- Video Section -->
-        <section class="video-section fade-in">
-            <h2 class="section-title">School Videos</h2>
-            <div class="videos-grid">
-                <div class="video-card">
-                    <div class="video-thumbnail">
-                        <img src="https://images.unsplash.com/photo-1524178234883-043d5c3f3cf4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="School Tour">
-                        <div class="play-button">
-                            <i class="fas fa-play"></i>
-                        </div>
-                    </div>
-                    <div class="video-info">
-                        <h3 class="video-title">Virtual Campus Tour</h3>
-                        <div class="video-duration">
-                            <i class="far fa-clock"></i> 8:24 min
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="video-card">
-                    <div class="video-thumbnail">
-                        <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&filter=crop&w=800&q=80" alt="Music Concert">
-                        <div class="play-button">
-                            <i class="fas fa-play"></i>
-                        </div>
-                    </div>
-                    <div class="video-info">
-                        <h3 class="video-title">Spring Music Concert</h3>
-                        <div class="video-duration">
-                            <i class="far fa-clock"></i> 12:15 min
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="video-card">
-                    <div class="video-thumbnail">
-                        <img src="https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Teacher Interview">
-                        <div class="play-button">
-                            <i class="fas fa-play"></i>
-                        </div>
-                    </div>
-                    <div class="video-info">
-                        <h3 class="video-title">Meet Our Teachers</h3>
-                        <div class="video-duration">
-                            <i class="far fa-clock"></i> 6:42 min
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-    
+
+            
     <!-- Footer -->
     <footer class="site-footer"  data-aos="fade-up">
         <div class="footer-top">

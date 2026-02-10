@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">s
+    <link rel="stylesheet" href="styles/programmes_styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
     <link rel="stylesheet" href="/styles/stylesheet.css">
 </head>
@@ -29,7 +32,7 @@
                 <p>/</p>
                 <i class="fa fa-lock" aria-hidden="true"></i>
                 <p>Sign-In</p>
-                <button class="btn-top-nav">APPLY NOW</button>
+                <button class="btn-top-nav"><a href="contact.html">APPLY NOW</a></button>
            </div>
         </div>
 
@@ -44,10 +47,136 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about_page.html">About Us</a></li>
+                <li><a href="programs_page.html">Our Programs</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
      </section>
+
+     <section class="programmes-hero">
+    <div class="hero-content">
+        <h1>Our Academic Programmes</h1>
+        <p>We provide quality education that nurtures excellence, character, and confidence.</p>
+    </div>
+</section>
+       <section class="programmes-page">
+            <h2 class="page-title">Our Academic Programmes</h2>
+
+            <div class="programme-block" >
+                <img src="/img/kindergarten_3.jpg" alt="Creche" data-aos="fade-left">
+                <div class="programme-content" data-aos="fade-right">
+                    <h3>Creche</h3>
+                    <p>
+                        A warm and secure environment where children begin learning
+                        through play, care, and guided discovery.
+                    </p>
+                </div>
+            </div>
+
+            <div class="programme-block reverse">
+                <img src="/img/kindergarten_7.jpg" alt="Kindergarten" data-aos="fade-up">
+                <div class="programme-content" data-aos="fade-down">
+                    <h3>Kindergarten</h3>
+                    <p>
+                        Strong foundations in reading, writing, numeracy,
+                        creativity, and social development.
+                    </p>
+                </div>
+            </div>
+
+            <div class="programme-block">
+                <img src="/img/primary-student-9.jpg" alt="Primary School"  data-aos="fade-left">
+                <div class="programme-content"  data-aos="fade-right">
+                    <h3>Primary School</h3>
+                    <p>
+                        Structured academic training with emphasis on discipline,
+                        excellence, and character formation.
+                    </p>
+                </div>
+            </div>
+
+            <div class="programme-block reverse" >
+                <img src="/img/jhs_2.jpg" alt="Junior High School" data-aos="fade-left">
+                <div class="programme-content" data-aos="fade-right">
+                    <h3>Junior High School</h3>
+                    <p>
+                        Preparing students academically and morally for BECE
+                        and future leadership roles.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>Give Your Child a Strong Academic Foundation</h2>
+            <p>
+                Enroll your child in an environment that promotes excellence,
+                discipline, and holistic development.
+            </p>
+
+            <div class="cta-buttons">
+                <a href="contact.html" class="cta-btn primary">Contact Us</a>
+                <a href="admission.html" class="cta-btn outline">Apply Now</a>
+            </div>
+        </div>
+    </section>
+     <footer class="site-footer"  data-aos="fade-up">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <a href="index.html"><img src="/img/logo.png" alt="" class="logo"></a>
+                <h2>Edu-Schools</h2>
+
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="programmes.html">Programmes</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>Ejisu, Kumasi, Ghana</p>
+                <p>Phone: +233 55757 789</p>
+                <p>Email: <a href="mailto:info@edu-school.edu.gh">info@ourschool.edu.gh</a></p>
+            </div>
+
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Edu-schools. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+        <!-- to js and libraries -->
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <script>
+        AOS.init({
+            duration: 1000, // animation duration in ms
+            once: false ,     // whether animation happens only once
+            mirror: true  
+        });
+
+        
+        </script>
+        <script src="scripts/script.js"></script>
+
 </body>
 </html>

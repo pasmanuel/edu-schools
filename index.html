@@ -11,10 +11,11 @@
     <link rel="stylesheet" href="/styles/stylesheet.css">
 </head>
 <body>
+    <div class="top-space"></div>
     <section class="top-nav">
         <div class="top_nav_1">
             <span>
-                <i class="fa fa-phone" style="color: white;" aria-hidden="true"></i>
+                <i class="fa fa-phone" aria-hidden="true"></i>
                 <p>+233245471446</p>
             </span>
             <span>
@@ -30,29 +31,37 @@
             </div>
            <div>
                 <p>/</p>
-                <i class="fa fa-lock"  style="color: white;" aria-hidden="true"></i>
-                <p>Sign-In</p>
-                <button class="btn-top-nav">APPLY NOW</button>
+                <i class="fa fa-lock" aria-hidden="true"></i>
+                <p><a href="">Sign-In</a></p>
+                <button class="btn-top-nav"><a href="contact.html">APPLY NOW</a></button>
            </div>
         </div>
 
     </section>
     <!-- To Navbar -->
     <section>
-        <nav>
-            <div>
-                <a href="index.html"><img src="/img/logo.png" alt="" class="logo"></a>
-                <h2>Edu-Schools</h2>
+        <nav class="navbar">
+            <div class="logo-box">
+                <a href="index.html">
+                    <img src="/img/logo.png" alt="School Logo" class="logo">
+                </a>
+                <h2 class="logo-head">Edu-Schools</h2>
             </div>
-            <ul>
+
+            <!-- Hamburger -->
+            <div class="menu-toggle" id="menuToggle">
+                ☰
+            </div>
+
+            <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about_page.html">About Us</a></li>
-                <li><a href="programs_page.html">Our Programs</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-     </section>
+    </section>
+
      <section class="hero-section">
             <div  >
                 <h3 data-aos="fade-right">Learning Today,</h3>
@@ -215,8 +224,8 @@
             <h4>Quick Links</h4>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="programmes.html">Programmes</a></li>
+                <li><a href="about_page.html">About</a></li>
+                <li><a href="programs_page.html">Programmes</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -224,9 +233,9 @@
 
         <div class="footer-contact">
             <h4>Contact Us</h4>
-            <p>123 School Street, Accra, Ghana</p>
+            <p>Ejisu,Kumasi - Ghana</p>
             <p>Phone: +233 123 456 789</p>
-            <p>Email: <a href="mailto:info@ourschool.edu.gh">info@ourschool.edu.gh</a></p>
+            <p>Email: <a href="mailto:info@ourschool.edu.gh">info@edu-schools.edu.gh</a></p>
         </div>
 
         <div class="footer-social">
@@ -244,17 +253,23 @@
 </footer>
 
 <!-- to js and libraries -->
- <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 1000,
-    once: false ,    
-    mirror: true  
-  });
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+    AOS.init({
+        duration: 1000,
+        once: false ,    
+        mirror: true  
+    });
 
-  
-</script>
-<script src="scripts/script.js"></script>
+       const menuToggle = document.getElementById("menuToggle");
+        const navLinks = document.getElementById("navLinks");
+
+        menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("show");
+        });
+
+    </script>
+    <script src="Scripts/scripts.js" defer></script>
 
 </body>
 </html>

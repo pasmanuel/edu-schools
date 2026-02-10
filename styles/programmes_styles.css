@@ -1,0 +1,176 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* HERO */
+.programmes-hero {
+    height: 60vh;
+    background:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url("/img/kindergarten_3.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.programmes-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.programmes-hero p {
+    font-size: 1.1rem;
+    max-width: 600px;
+}
+
+/* PROGRAMMES SECTION */
+.programmes-page {
+    padding: 4rem 6%;
+    background: #f8f9fa;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+    color: #222;
+}
+
+/* Programme block */
+.programme-block {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 5rem;
+}
+
+.programme-block.reverse {
+    flex-direction: row-reverse;
+}
+
+.programme-block img {
+    width: 50%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* Text area */
+.programme-content {
+    width: 50%;
+}
+
+.programme-content h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #264653;
+}
+
+.programme-content p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #444;
+}
+
+
+.cta-section {
+    padding: 5rem 8%;
+    background:
+        linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+        url("/img/new-mission-9.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+}
+
+.cta-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.cta-content h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.cta-content p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
+    color: #f1f1f1;
+}
+
+/* Buttons */
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.cta-btn {
+    padding: 0.9rem 2.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+/* Primary button */
+.cta-btn.primary {
+    background: #d93853;
+    color: white;
+}
+
+.cta-btn.primary:hover {
+    background: #b92f45;
+}
+
+/* Outline button */
+.cta-btn.outline {
+    border: 2px solid white;
+    color: white;
+}
+
+.cta-btn.outline:hover {
+    background: white;
+    color: #222;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .cta-content h2 {
+        font-size: 2rem;
+    }
+}
+
+
+/* Responsive */
+@media (max-width: 900px) {
+    .programme-block,
+    .programme-block.reverse {
+        flex-direction: column;
+    }
+
+    .programme-block img,
+    .programme-content {
+        width: 100%;
+    }
+
+    .programme-block img {
+        height: 280px;
+    }
+
+    .programme-content {
+        text-align: center;
+    }
+}
