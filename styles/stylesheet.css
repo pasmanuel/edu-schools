@@ -8,9 +8,69 @@ body{
             color: #333;
             line-height: 1.6;
         }
+
+
+
+        
+/* TOP NAV */
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem 6%;
+    background: #264653;
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* LEFT */
+.top_nav_1 {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.top_nav_1 span {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+/* RIGHT */
+.top_nav_2 {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.top_nav_2 .auth {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.top-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* BUTTON */
+.btn-top-nav {
+    padding: 0.35rem 1rem;
+    border: none;
+    background: #d93853;
+    border-radius: 20px;
+}
+
+.btn-top-nav a {
+    color: white;
+    font-weight: 600;
+}
+
+/* ================= MOBILE ================= */
+
 /* to Top-Nav */
 
-.top-space{
+/* .top-space{
     padding: 15px;
 }
 .top-nav{
@@ -33,11 +93,6 @@ nav div {
     gap: 30px;
 }
 
-
-.logo-head {
-    font-size: 1.5rem;
-    color: #264653;
-}
 
 
 .top_nav_2
@@ -79,16 +134,21 @@ nav div {
     /* color: #fff; */
 }
 
-
+/* 
 span{
     color: white;
     font-weight: 700;
-}
+} */ 
 
 
 
 /* To main nav bar */
 
+
+.logo-head {
+    font-size: 1.5rem;
+    color: #264653;
+}
 
 .navbar {
     display: flex;
@@ -647,5 +707,33 @@ span{
     .nav-links li {
         padding: 1rem 0;
         border-bottom: 1px solid #eee;
+    }
+}
+
+
+
+/* to mobile view top nav bar */
+@media (max-width: 768px) {
+
+    .top-nav {
+        flex-direction: column;
+        gap: 0.6rem;
+        text-align: center;
+        padding: 0.8rem 4%;
+    }
+
+    .top_nav_1,
+    .top_nav_2 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .btn-top-nav {
+        margin-top: 0.4rem;
+    }
+
+    /* OPTIONAL: hide text, keep icons */
+    .top_nav_1 p {
+        font-size: 0.85rem;
     }
 }
