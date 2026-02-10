@@ -593,6 +593,31 @@ span{
 
 
 /* to nav bar media */
+/* NAVBAR BASE */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 6%;
+    background: #fff;
+    position: relative;
+    z-index: 100;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* LINKS – DESKTOP */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+/* ================= MOBILE ================= */
 @media (max-width: 768px) {
 
     .menu-toggle {
@@ -605,23 +630,22 @@ span{
         left: 0;
         width: 100%;
         background: white;
-        flex-direction: column;
-        gap: 0;
+
+        /* IMPORTANT */
         display: none;
+        flex-direction: column;
+        text-align: center;
+
         box-shadow: 0 10px 20px rgba(0,0,0,0.1);
     }
 
-    .nav-links li {
-        border-bottom: 1px solid #eee;
-    }
-
-    .nav-links a {
-        display: block;
-        padding: 1rem;
-        text-align: center;
-    }
-
+    /* THIS IS WHAT JS TOGGLES */
     .nav-links.show {
         display: flex;
+    }
+
+    .nav-links li {
+        padding: 1rem 0;
+        border-bottom: 1px solid #eee;
     }
 }
