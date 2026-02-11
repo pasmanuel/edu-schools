@@ -16,7 +16,7 @@ body{
 
         
 /* TOP NAV */
-.top-nav {
+/* .top-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -72,7 +72,125 @@ body{
 .btn-top-nav a {
     color: white;
     font-weight: 600;
+} */
+
+
+
+/* RESET (recommended) */
+
+
+/* Space for fixed nav */
+.top-space {
+    height: 60px;
 }
+
+/* TOP NAV BASE */
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem 6%;
+    background: #264653;
+    color: white;
+    font-size: 0.9rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    flex-wrap: wrap; /* VERY IMPORTANT */
+}
+
+/* LEFT SECTION */
+.top_nav_1 {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.top_nav_1 span {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+/* RIGHT SECTION */
+.top_nav_2 {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+}
+
+.top_nav_2 .auth {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+/* LINKS */
+.top-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* BUTTON */
+.btn-top-nav {
+    padding: 0.35rem 1rem;
+    border: none;
+    background: #d93853;
+    border-radius: 20px;
+}
+
+.btn-top-nav a {
+    color: white;
+    font-weight: 600;
+}
+
+/* ========================= */
+/* 📱 MOBILE RESPONSIVENESS */
+/* ========================= */
+@media (max-width: 768px) {
+    .top-nav {
+        flex-direction: column;
+        gap: 0.7rem;
+        padding: 0.8rem 5%;
+        text-align: center;
+    }
+
+    .top_nav_1,
+    .top_nav_2 {
+        justify-content: center;
+    }
+
+    .top_nav_1 span,
+    .top_nav_2 .auth {
+        font-size: 0.85rem;
+    }
+
+    .btn-top-nav {
+        margin-top: 0.3rem;
+    }
+
+    .top-space {
+        height: 120px; /* adjust because nav is taller on mobile */
+    }
+}
+
+/* ========================= */
+/* 📱 SMALL PHONES */
+/* ========================= */
+@media (max-width: 480px) {
+    .top_nav_1 {
+        flex-direction: column;
+        gap: 0.4rem;
+    }
+
+    .top_nav_2 {
+        flex-direction: column;
+        gap: 0.4rem;
+    }
+}
+
 
 
 /* To main nav bar */
@@ -85,7 +203,7 @@ body{
 
 .navbar {
     position: fixed !important;
-    top: 2rem;
+    top: 2.5rem;
     left: 0;
     width: 100%;
     height: 80px;
@@ -567,30 +685,6 @@ body{
 
 
 
-/* NAVBAR BASE */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 6%;
-    background: #fff;
-    position: relative;
-    z-index: 100;
-}
-
-.menu-toggle {
-    display: none;
-    font-size: 2rem;
-    cursor: pointer;
-}
-
-
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
-}
-
 
 
 
@@ -653,7 +747,7 @@ body{
 
 
 
-/* to nav bar media */
+/* to main nav bar media */
 
 
 @media (max-width: 768px) {
@@ -686,38 +780,19 @@ body{
         padding: 1rem 0;
         border-bottom: 1px solid #eee;
     }
-}
 
-
-
-/* to mobile view top nav bar */
-@media (max-width: 768px) {
-
-    .top-nav {
-        flex-direction: column;
-        gap: 0.6rem;
-        text-align: center;
-        padding: 0.8rem 4%;
-    }
-
-    .top_nav_1,
-    .top_nav_2 {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .btn-top-nav {
-        margin-top: 0.4rem;
-    }
-
-  
-    .top_nav_1 p {
-        font-size: 0.85rem;
-    }
     .navbar{
-        z-index: 1000;
+        margin-top: 50px;
     }
 }
+
+@media (max-width: 992px) {
+    .navbar{
+        margin-top: 10px;
+    }
+}
+
+
 
 
 
