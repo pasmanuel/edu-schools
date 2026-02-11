@@ -3,11 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
             background-color: #f8f9fa;
             color: #333;
             line-height: 1.6;
-            /* padding-top: 5px;  */
 }
 
  
@@ -30,7 +30,8 @@ body{
 
 }
 
-/* LEFT */
+
+
 .top_nav_1 {
     display: flex;
     gap: 1.5rem;
@@ -60,7 +61,7 @@ body{
     text-decoration: none;
 }
 
-/* BUTTON */
+
 .btn-top-nav {
     padding: 0.35rem 1rem;
     border: none;
@@ -136,9 +137,9 @@ body{
     min-height: 90vh;
     background:
         linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
-        url("/img/kindergarten_3.jpg");
+        url("/img/new-mission-9.jpg");
     background-size: cover;
-    background-position: center;
+    /* background-position: center; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -148,13 +149,13 @@ body{
     color: white;
 }
 
-/* Content */
+
 .hero-section > div {
     max-width: 800px;
      padding-top: 50px;
 }
 
-/* Headings */
+
 .hero-section h3 {
     font-size: 3rem;
     font-weight: 700;
@@ -171,9 +172,6 @@ body{
     margin-bottom: 2rem;
     color: #f1f1f1;
 }
-
-
-
 
 
 
@@ -281,7 +279,7 @@ body{
     padding: 60px 8%;
 }
 
-/* Text area */
+
 .welcome-text {
     flex: 1;
 }
@@ -300,7 +298,7 @@ body{
     margin-bottom: 15px;
 }
 
-/* Image area */
+
 .welcome-image {
     flex: 1;
 }
@@ -312,16 +310,13 @@ body{
     display: block;
 }
 
-/* Button */
+
 .welcome-text .btn {
     margin-top: 15px;
     padding: 10px;
     background: #d93853;;
     border: 0.03rem solid #d93853;
     border-radius: 10px;
-    
-
-
 }
 
 
@@ -338,9 +333,7 @@ body{
 }
 
 
-
-
-/* to profammes offere home */
+/* to progammes offere home */
 .programmes {
     width: 100%;
 }
@@ -359,6 +352,7 @@ body{
     color: white;
     overflow: hidden;
     font-size: 2rem;
+    
 }
 
 .nursery { 
@@ -372,6 +366,7 @@ body{
 .primary {
      background: url("/img/lower_primary_9.jpg") center/cover no-repeat; 
     }
+
 
 .jhs { 
     background: url("/img/new-mission-9.jpg") center/cover no-repeat;
@@ -394,9 +389,6 @@ body{
 
     
 }
-
-
-
 
 
 /* to facilities section */
@@ -427,7 +419,7 @@ body{
     height: 300px; 
 }
 
-/* Image fills box */
+
 .facility-box img {
     width: 100%;
     height: 100%;
@@ -461,7 +453,7 @@ body{
 .facility-box h4 {
     margin-bottom: 0.5rem;
     font-size: 1.5rem;
-    color: #1a5f7a;
+    color: white;
 
 }
 
@@ -506,7 +498,7 @@ body{
 
 
 .site-footer {
-    background-color:#1a5f7a;
+      background: #264653;
     color: #fff;
     padding: 3rem 2rem 1rem 2rem;
 }
@@ -575,7 +567,29 @@ body{
 
 
 
+/* NAVBAR BASE */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 6%;
+    background: #fff;
+    position: relative;
+    z-index: 100;
+}
 
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
 
 
 
@@ -613,7 +627,7 @@ body{
 
 
 
-/* Responsive mobile view */
+
 @media (max-width: 768px) {
     .facilities-grid {
         grid-template-columns: 1fr;
@@ -637,29 +651,7 @@ body{
 }
 
 
-/* NAVBAR BASE */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 6%;
-    background: #fff;
-    position: relative;
-    z-index: 100;
-}
 
-.menu-toggle {
-    display: none;
-    font-size: 2rem;
-    cursor: pointer;
-}
-
-
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
-}
 
 /* to nav bar media */
 
@@ -677,7 +669,7 @@ body{
         width: 100%;
         background: white;
 
-        /* IMPORTANT */
+       
         display: none;
         flex-direction: column;
         text-align: center;
@@ -685,7 +677,7 @@ body{
         box-shadow: 0 10px 20px rgba(0,0,0,0.1);
     }
 
-    /* THIS IS WHAT JS TOGGLES */
+    
     .nav-links.show {
         display: flex;
     }
@@ -718,7 +710,7 @@ body{
         margin-top: 0.4rem;
     }
 
-    /* OPTIONAL: hide text, keep icons */
+  
     .top_nav_1 p {
         font-size: 0.85rem;
     }
@@ -736,11 +728,13 @@ body{
     }
 }
 
-/* Mobile */
+
 @media (max-width: 600px) {
     .hero-section {
         min-height: 80vh;
         padding: 0 5%;
+        background-position: center;
+
     }
 
     .hero-section h3 {
@@ -758,7 +752,7 @@ body{
 
 
 /* To welcome section media */
-/* ===== Tablet (≤ 992px) ===== */
+
 @media (max-width: 992px) {
     .welcome-section {
         padding: 50px 5%;
@@ -770,7 +764,7 @@ body{
     }
 }
 
-/* ===== Mobile (≤ 768px) ===== */
+
 @media (max-width: 768px) {
     .welcome-section {
         flex-direction: column;
@@ -778,6 +772,9 @@ body{
         padding: 40px 20px;
     }
 
+    .hero-section {
+    padding-top: 80px;
+}
     .welcome-text h2 {
         font-size: 1.8rem;
     }
@@ -788,6 +785,10 @@ body{
 
     .welcome-image {
         margin-top: 20px;
+    }
+
+    .welcome-image img{
+        width:100%;
     }
 }
 

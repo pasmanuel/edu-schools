@@ -5,7 +5,7 @@
             padding: 20px;
         }
         
-        /* Header */
+        
         .header {
             background: linear-gradient(135deg, #1a5f7a, #264653);
             color: white;
@@ -13,6 +13,7 @@
             text-align: center;
             margin-bottom: 40px;
             border-radius: 0 0 16px 16px;
+            margin-top: 100px;
         }
         
         .header h1 {
@@ -26,8 +27,7 @@
             margin: 0 auto;
             opacity: 0.9;
         }
-        
-        /* Contact Grid */
+
         .contact-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -35,7 +35,7 @@
             margin-bottom: 50px;
         }
         
-        /* Contact Info Cards */
+        
         .contact-card {
             background: white;
             border-radius: 12px;
@@ -102,7 +102,7 @@
             text-decoration: underline;
         }
         
-        /* Contact Form */
+        
         .contact-form-section {
             background: white;
             border-radius: 16px;
@@ -194,7 +194,7 @@
             box-shadow: 0 6px 12px rgba(26, 95, 122, 0.2);
         }
         
-        /* Map Section */
+        
         .map-section {
             margin-bottom: 50px;
         }
@@ -213,7 +213,7 @@
             text-align: center;
         }
         
-        /* Departments Section */
+      
         .departments-section {
             margin-bottom: 60px;
         }
@@ -254,10 +254,6 @@
             font-weight: 600;
             font-size: 0.95rem;
         }
-        
-        
-        
-     
         
         .emergency-contact {
             background: rgba(231, 111, 81, 0.1);
@@ -347,7 +343,7 @@
             }
         }
         
-        /* Animation */
+   
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }

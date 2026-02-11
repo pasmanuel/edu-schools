@@ -1,4 +1,4 @@
-/* RESET */
+
 * {
     margin: 0;
     padding: 0;
@@ -24,6 +24,7 @@
 .programmes-hero h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
+    
 }
 
 .programmes-hero p {
@@ -44,7 +45,7 @@
     color: #222;
 }
 
-/* Programme block */
+
 .programme-block {
     display: flex;
     align-items: center;
@@ -63,7 +64,7 @@
     border-radius: 15px;
 }
 
-/* Text area */
+
 .programme-content {
     width: 50%;
 }
@@ -71,7 +72,8 @@
 .programme-content h3 {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: #264653;
+    color: #1a5f7a;
+
 }
 
 .programme-content p {
@@ -100,6 +102,7 @@
 .cta-content h2 {
     font-size: 2.4rem;
     margin-bottom: 1rem;
+    
 }
 
 .cta-content p {
@@ -109,7 +112,7 @@
     color: #f1f1f1;
 }
 
-/* Buttons */
+
 .cta-buttons {
     display: flex;
     justify-content: center;
@@ -125,7 +128,7 @@
     transition: 0.3s ease;
 }
 
-/* Primary button */
+
 .cta-btn.primary {
     background: #d93853;
     color: white;
@@ -135,7 +138,7 @@
     background: #b92f45;
 }
 
-/* Outline button */
+
 .cta-btn.outline {
     border: 2px solid white;
     color: white;
@@ -155,6 +158,8 @@
 .co-curricular h3 {
     font-size: 2rem;
     margin-bottom: 0.5rem;
+    color: #1a5f7a;
+
 }
 
 .section-intro {
@@ -191,7 +196,8 @@
 .activity-box h4 {
     margin: 1rem 0 0.5rem;
     font-size: 1.3rem;
-    color: #222;
+    color: #1a5f7a;
+
 }
 
 .activity-box p {
@@ -201,7 +207,7 @@
 }
 
 
-/* Responsive */
+
 @media (max-width: 768px) {
     .cta-content h2 {
         font-size: 2rem;
@@ -211,10 +217,11 @@
     width: 100%;
     padding-top: 100px;
 }
+
 }
 
 
-/* Responsive */
+
 @media (max-width: 900px) {
     .programme-block,
     .programme-block.reverse {
@@ -233,4 +240,15 @@
     .programme-content {
         text-align: center;
     }
+.co-curricular-grid{
+    grid-template-columns: 1fr;
+
 }
+.hero-content{
+    padding-top: 50px;
+}
+.programmes-hero h1{
+    font-size: 2.5rem;
+}
+
+    }

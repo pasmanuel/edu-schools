@@ -1,13 +1,11 @@
 
-        
-        
         .container {
             max-width: 1400px;
             margin: 0 auto;
             padding: 20px;
         }
         
-        /* Header */
+        
         .header {
               background-image:
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
@@ -84,7 +82,7 @@
             opacity: 0.9;
         }
         
-        /* Gallery Controls */
+      
         .gallery-controls {
             margin-bottom: 30px;
             text-align: center;
@@ -120,35 +118,8 @@
             box-shadow: 0 5px 15px rgba(26, 95, 122, 0.2);
         }
         
-        .search-box {
-            max-width: 500px;
-            margin: 0 auto;
-            position: relative;
-        }
-        
-        .search-box input {
-            width: 100%;
-            padding: 16px 20px 16px 50px;
-            border: 2px solid #e0e0e0;
-            border-radius: 50px;
-            font-size: 1rem;
-            transition: border-color 0.3s ease;
-        }
-        
-        .search-box input:focus {
-            outline: none;
-            border-color: #2a9d8f;
-        }
-        
-        .search-box i {
-            position: absolute;
-            left: 20px;
-            top: 50%;
-            transform: translateY(-50%);
-            color: #777;
-        }
-        
-        /* Gallery Grid */
+   
+
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -219,7 +190,7 @@
             line-height: 1.5;
         }
         
-        /* Featured Albums Section */
+        
         .featured-section {
             margin-bottom: 60px;
         }
@@ -320,7 +291,39 @@
         .album-link:hover {
             gap: 12px;
         }
+
+        /* video link */
+       .video-link {
+        padding: 5rem;
+        text-align: center;
+        background: #1a5f7a;
+        color: #fff;
+        }
+
+
+        .video-link a {
+        display: inline-block;
+        margin-top: 1.5rem;
+        padding: 1rem 3rem;
+        background-color: #1414f5;
+        color: #ffff;
+        text-decoration: none;
+        font-weight: 600;
+        border-radius: 2rem;
+
+        }
+
+      .video-link a:hover{
+             background-color:#ffffff;
+            color: black;
+        }
+            
         
+
+        
+
+
+
        
         
       

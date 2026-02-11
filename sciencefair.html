@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Graduation Pictures || Edu-Schools</title>
+    <title>Sceince Fair Pictures || Edu-Schools</title>
     <script src="https://unpkg.com/scrollreveal"></script>
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
@@ -11,58 +11,73 @@
     <link rel="stylesheet" href="styles/styles_contact.css">
 </head>
 <body>
-     <section class="top-nav">
+    <div class="top-space"></div>
+
+    <section class="top-nav">
         <div class="top_nav_1">
             <span>
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                <p>+233245471446</p>
+                <i class="fa fa-phone"></i>
+                <p>+233 245 471 446</p>
             </span>
             <span>
-                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <i class="fa fa-envelope"></i>
                 <p>eduschool67@gmail.com</p>
             </span>
-
         </div>
-        <div  class="top_nav_2">
-            <div>
-                <i class="fa fa-user-plus" aria-hidden="true"></i>
+
+        <div class="top_nav_2">
+            <div class="auth">
+                <i class="fa fa-user-plus"></i>
                 <p>Sign-Up</p>
             </div>
-           <div>
-                <p>/</p>
-                <i class="fa fa-lock" aria-hidden="true"></i>
-                <p>Sign-In</p>
-                 <button class="btn-top-nav"><a href="contact.html">APPLY NOW</a></button>
-           </div>
-        </div>
 
+            <div class="auth">
+                <i class="fa fa-lock"></i>
+                <p><a href="#">Sign-In</a></p>
+            </div>
+
+            <button class="btn-top-nav">
+                <a href="contact.html">APPLY NOW</a>
+            </button>
+        </div>
     </section>
     <!-- To Navbar -->
      <section>
-        <nav>
-           <div>
-                <img src="/img/logo.png" alt="" class="logo">
+        <nav class="navbar">
+            <div class="logo-box">
+                <a href="index.html">
+                    <img src="/img/logo.png" alt="School Logo" class="logo">
+                </a>
                 <h2 class="logo-head">Edu-Schools</h2>
             </div>
-            <ul>
+
+            <!-- Hamburger -->
+            <div class="menu-toggle" id="menuToggle">
+                ☰
+            </div>
+
+            <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about_page.html">About Us</a></li>
+                <li><a href="programs_page.html">Our Programs</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-     </section>
+    </section>
+
      <div class="container" >
      
         <header class="header fade-up">
-            <h1>Explore our Graduation Pictures 2007 till date</h1>
+            <h1>Explore our Science Fair photos 2007 till date</h1>
             <p>We're here to help! Reach out to us through any of the following methods. Our team is ready to assist you with any questions or concerns.</p>
+            <button><a href="gallery.html">Back to Gallery</a></button>
         </header>
 
     <section class="facilities">
         <div class="facilities-grid">
             <div class="facility-box" data-aos="fade-right" >
-                <img src="/img/graduation-22.jpg" alt="Classroom">
+                <img src="/img/hero-1.jpg" alt="Classroom">
                 <div class="overlay">
                     <h4>class of 20018</h4>
                     <p>Spacious and well-lit classrooms designed for focused learning.</p>
@@ -70,7 +85,7 @@
             </div>
 
             <div class="facility-box" data-aos="fade-left" >
-                <img src="/img/graduation-22.jpg" alt="Classroom">
+                <img src="/img/hero-1.jpg" alt="Classroom">
                 
                 <div class="overlay">
                     <h4></h4>
@@ -169,47 +184,52 @@
         </div>
     </section>  
         
-  <!-- to footer -->
-<footer class="site-footer"  data-aos="fade-up">
-    <div class="footer-top">
-        <div class="footer-logo">
-            <a href="index.html"><img src="/img/logo.png" alt="" class="logo"></a>
-            <h2>Edu-Schools</h2>
-
-        </div>
-
-        <div class="footer-links">
-            <h4>Quick Links</h4>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about_page.html">About</a></li>
-                <li><a href="programs_page.html">Programmes</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-contact">
-            <h4>Contact Us</h4>
-            <p>Ejisu,Kumasi - Ghana</p>
-            <p>Phone: +233 123 456 789</p>
-            <p>Email: <a href="mailto:info@ourschool.edu.gh">info@edu-schools.edu.gh</a></p>
-        </div>
-
+  
        
-            <div class="footer-social">
-                <h4>Follow Us</h4>
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            </div>
-    </div>
+    
+            
+        
+<!-- to footer -->
+    <footer class="site-footer"  data-aos="fade-up">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <a href="index.html"><img src="/img/logo.png" alt="" class="logo"></a>
+                <h2>Edu-Schools</h2>
 
-    <div class="footer-bottom">
-        <p>&copy; 2026 Edu-schools. All rights reserved.</p>
-    </div>
-</footer>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about_page.html">About</a></li>
+                    <li><a href="programs_page.html">Programmes</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>Ejisu,Kumasi - Ghana</p>
+                <p>Phone: +233 123 456 789</p>
+                <p>Email: <a href="mailto:info@ourschool.edu.gh">info@edu-schools.edu.gh</a></p>
+            </div>
+
+        
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Edu-schools. All rights reserved.</p>
+        </div>
+    </footer>
 
 <!-- to js and libraries -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>

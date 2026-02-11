@@ -1,19 +1,24 @@
 .about-hero {
-  height: 60vh;
+  height: 50vh;
   background: linear-gradient(
       rgba(0,0,0,0.55),
       rgba(0,0,0,0.55)
     ),
-    url("/img/3.jpg") center/cover no-repeat;
+    url("/img/3.jpg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   display: flex;
   align-items: center;
   padding-left: 8%;
-  padding-top: 15px;
+  padding-top: 25px;
+  
 }
 
 .about-hero-content {
   color: #fff;
   max-width: 600px;
+  padding-top: 70px;
 }
 
 .about-hero span {
@@ -26,7 +31,9 @@
 .about-hero h1 {
   font-size: 3.5rem;
   line-height: 1.2;
+  
 }
+
 
 
 /* to story */
@@ -181,7 +188,7 @@ color: #1a5f7a;
             font-size: 0.95rem;
             margin: 0;
         }
-        
+
         .quote-section {
             background:
         linear-gradient(135deg, rgba(217, 56, 83, 0.40), rgba(38, 70, 83, 0.40)),
@@ -214,14 +221,6 @@ color: #1a5f7a;
             font-weight: 600;
             font-size: 1.1rem;
         }
-
-
-
-
-
-
-
-/* TO CORE VALUES */
 
 
 
@@ -476,6 +475,7 @@ color: #1a5f7a;
         color: #fff;
         }
 
+
         .about-cta a {
         display: inline-block;
         margin-top: 1.5rem;
@@ -497,23 +497,14 @@ color: #1a5f7a;
 
 
 
-
-
-
-    /* to about story media */
-    
-/* Base styles */
 .about-story {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 2rem; /* space between text and image */
+  gap: 2rem; 
   padding: 2rem;
-  flex-wrap: wrap; /* allow items to wrap on smaller screens */
-}
-
-.about-story .story-text {
-  flex: 1 1 400px; /* allow text to shrink/grow, minimum 400px */
+  flex-wrap: wrap; 
+  flex: 1 1 400px; 
 }
 
 .about-story .story-text h2 {
@@ -527,7 +518,7 @@ color: #1a5f7a;
 }
 
 .about-story .story-image {
-  flex: 1 1 400px; /* allow image to shrink/grow */
+  flex: 1 1 400px; 
   display: flex;
   justify-content: center;
 }
@@ -538,7 +529,9 @@ color: #1a5f7a;
   border-radius: 8px;
 }
 
-/* Responsive: stack vertically on smaller screens */
+
+/* to about story media */
+    
 @media (max-width: 768px) {
   .about-story {
     flex-direction: column;
@@ -557,6 +550,11 @@ color: #1a5f7a;
   .about-story .story-text p {
     font-size: 0.95rem;
   }
+  .storyhero span {
+  letter-spacing: 2px;
+  font-size: 0.2rem;
+
+}
 }
 
        
@@ -606,7 +604,6 @@ color: #1a5f7a;
             }
         }
         
-        /* Animation for page load */
         @keyframes fadeInUp {
             from {
                 opacity: 0;
