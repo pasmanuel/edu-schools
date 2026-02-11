@@ -657,7 +657,6 @@ body{
 }
 
 
-/* to nav bar media */
 /* NAVBAR BASE */
 .navbar {
     display: flex;
@@ -681,6 +680,8 @@ body{
     list-style: none;
     gap: 2rem;
 }
+
+/* to nav bar media */
 
 
 @media (max-width: 768px) {
@@ -740,6 +741,9 @@ body{
     /* OPTIONAL: hide text, keep icons */
     .top_nav_1 p {
         font-size: 0.85rem;
+    }
+    .navbar{
+        z-index: 1000;
     }
 }
 
