@@ -19,52 +19,11 @@ html, body {
 
 
 
-        
-/* TOP NAV */
-
-/* .top_nav_1 span {
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
-}
-
-
-.top_nav_2 {
-    display: flex;
-    align-items: center;
-    gap: 1.2rem;
-}
-
-.top_nav_2 .auth {
-    display: flex;
-    align-items: center;
-    gap: 0.3rem;
-}
-
-.top-nav a {
-    color: white;
-    text-decoration: none;
-}
-
-
-.btn-top-nav {
-    padding: 0.35rem 1rem;
-    border: none;
-    background: #d93853;
-    border-radius: 20px;
-}
-
-.btn-top-nav a {
-    color: white;
-    font-weight: 600;
-} */ */
+ 
 
 
 
-/* RESET (recommended) */
 
-
-/* Space for fixed nav */
 .top-space {
     height: 60px;
 }
@@ -97,7 +56,7 @@ html, body {
     gap: 0.4rem;
 }
 
-/* RIGHT SECTION */
+
 .top_nav_2 {
     display: flex;
     align-items: center;
@@ -130,18 +89,15 @@ html, body {
     font-weight: 600;
 }
 
-/* ========================= */
-/* 📱 MOBILE RESPONSIVENESS */
-/* ========================= */
+
+
 @media (max-width: 768px) {
     .top-nav {
      display: none;
     }
 }
 
-/* ========================= */
-/* 📱 SMALL PHONES */
-/* ========================= */
+
 @media (max-width: 480px) {
     .top_nav_1 {
         flex-direction: column;
