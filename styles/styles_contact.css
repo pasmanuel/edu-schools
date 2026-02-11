@@ -6,8 +6,14 @@
         }
         
         
-        .header {
-            background: linear-gradient(135deg, #1a5f7a, #264653);
+        .header{
+            height: 60vh;
+            background:
+             linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+            url("/img/kindergarten_3.jpg");
+            background-size: cover;
+            background-position: center;
+            /* background: linear-gradient(135deg, #1a5f7a, #264653); */
             color: white;
             padding: 60px 20px;
             text-align: center;
