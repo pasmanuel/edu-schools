@@ -311,6 +311,9 @@
                 font-size: 1.1rem;
             }
             
+            .header{
+                margin-top: 0;
+            }
             .contact-form-section {
                 padding: 30px 20px;
             }
