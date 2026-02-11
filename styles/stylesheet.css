@@ -4,11 +4,16 @@
     box-sizing: border-box;
 }
 
-body{
-            background-color: #f8f9fa;
-            color: #333;
-            line-height: 1.6;
+
+
+html, body {
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    width: 100%;
+    overflow-x: hidden;
 }
+
 
  
 
@@ -16,28 +21,8 @@ body{
 
         
 /* TOP NAV */
-/* .top-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.6rem 6%;
-    background: #264653;
-    color: white;
-    font-size: 0.9rem;
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
 
-}
-
-
-
-.top_nav_1 {
-    display: flex;
-    gap: 1.5rem;
-}
-
-.top_nav_1 span {
+/* .top_nav_1 span {
     display: flex;
     align-items: center;
     gap: 0.4rem;
@@ -72,7 +57,7 @@ body{
 .btn-top-nav a {
     color: white;
     font-weight: 600;
-} */
+} */ */
 
 
 
@@ -97,10 +82,9 @@ body{
     top: 0;
     width: 100%;
     z-index: 1000;
-    flex-wrap: wrap; /* VERY IMPORTANT */
+    flex-wrap: wrap; 
 }
 
-/* LEFT SECTION */
 .top_nav_1 {
     display: flex;
     gap: 1.5rem;
@@ -127,13 +111,13 @@ body{
     gap: 0.3rem;
 }
 
-/* LINKS */
+
 .top-nav a {
     color: white;
     text-decoration: none;
 }
 
-/* BUTTON */
+
 .btn-top-nav {
     padding: 0.35rem 1rem;
     border: none;
@@ -151,28 +135,7 @@ body{
 /* ========================= */
 @media (max-width: 768px) {
     .top-nav {
-        flex-direction: column;
-        gap: 0.7rem;
-        padding: 0.8rem 5%;
-        text-align: center;
-    }
-
-    .top_nav_1,
-    .top_nav_2 {
-        justify-content: center;
-    }
-
-    .top_nav_1 span,
-    .top_nav_2 .auth {
-        font-size: 0.85rem;
-    }
-
-    .btn-top-nav {
-        margin-top: 0.3rem;
-    }
-
-    .top-space {
-        height: 120px; /* adjust because nav is taller on mobile */
+     display: none;
     }
 }
 
@@ -261,7 +224,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-
+    width: 100vw;
     text-align: center;
     padding: 0 6%;
     color: white;
@@ -781,16 +744,12 @@ body{
         border-bottom: 1px solid #eee;
     }
 
-    .navbar{
-        margin-top: 50px;
+      .navbar{
+        position: fixed;
+        top: 0;
     }
 }
 
-@media (max-width: 992px) {
-    .navbar{
-        margin-top: 10px;
-    }
-}
 
 
 
