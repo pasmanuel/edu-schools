@@ -584,13 +584,12 @@ color: #1a5f7a;
 
         /* to media head teacher message */
 
-        @media (max-width: 768px) {
-    .message-container {
-        flex-direction: column;
-        padding: 0 8px;
-    }
-}
-
+           @media (max-width: 768px) {
+            .message-container {
+                flex-direction: column;
+                /* margin: 0 ; */
+            }
+            
             .headmaster-photo, .message-content {
                 width: 100%;
             }
