@@ -91,24 +91,6 @@ html, body {
 
 
 
-@media (max-width: 768px) {
-    .top-nav {
-     display: none;
-    }
-}
-
-
-@media (max-width: 480px) {
-    .top_nav_1 {
-        flex-direction: column;
-        gap: 0.4rem;
-    }
-
-    .top_nav_2 {
-        flex-direction: column;
-        gap: 0.4rem;
-    }
-}
 
 
 
@@ -153,6 +135,7 @@ html, body {
     color: #222;
     font-weight: 600;
     transition: color 0.3s ease;
+    font-size: 20px;
 }
 
 .nav-links a:hover {
@@ -668,6 +651,15 @@ html, body {
 /* to main nav bar media */
 
 
+
+    .nav-links li a {
+        color: #264653;
+        font-weight: 600;
+        letter-spacing: 0.3px;
+    }
+
+
+
 @media (max-width: 768px) {
 
     .menu-toggle {
@@ -789,5 +781,24 @@ html, body {
 
     .welcome-text p {
         font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .top-nav {
+     display: none;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .top_nav_1 {
+        flex-direction: column;
+        gap: 0.4rem;
+    }
+
+    .top_nav_2 {
+        flex-direction: column;
+        gap: 0.4rem;
     }
 }
