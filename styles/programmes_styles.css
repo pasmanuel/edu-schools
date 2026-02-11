@@ -206,6 +206,11 @@
     .cta-content h2 {
         font-size: 2rem;
     }
+
+.cta-section {
+    width: 100%;
+    padding-top: 100px;
+}
 }
 
 
