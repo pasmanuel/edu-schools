@@ -587,6 +587,18 @@ color: #1a5f7a;
             .stats-section {
                 grid-template-columns: repeat(2, 1fr);
             }
+
+            .about-hero-content {
+                color: #fff;
+                max-width: 600px;
+                /* padding-top: 70px; */
+            }
+
+            .about-hero h1 {
+            font-size: 2rem;
+            line-height: 1.2;
+  
+
         }
         
 
