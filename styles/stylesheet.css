@@ -391,26 +391,25 @@ html, body {
     display: block;
 }
 
+.read-more-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.6rem 1.5rem;
 
-.welcome-text .btn {
-    margin-top: 15px;
-    padding: 10px;
-    background: #d93853;;
-    border: 0.03rem solid #d93853;
-    border-radius: 10px;
-}
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #264653;
 
-
-.welcome-text .btn:hover{
-    border: 0.03rem solid;
-    
-    
-}
-.welcome-text .btn a {
     text-decoration: none;
-    font-weight: 500;
-    color: white;
-  
+    border: 2px solid #264653;
+    border-radius: 30px;
+
+    transition: all 0.3s ease;
+}
+
+.read-more-btn:hover {
+    background-color: #264653;
+    color: #fff;
 }
 
 
