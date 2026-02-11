@@ -83,6 +83,12 @@
             box-shadow: 0 5px 15px rgba(26, 95, 122, 0.2);
         }
         
+            .filter-btn a{
+                text-decoration: none;
+                color: #555;
+
+            }
+
    
 
         .gallery-grid {
